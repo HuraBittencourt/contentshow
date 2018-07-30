@@ -30,7 +30,7 @@ header{
 }
 
 img{
-  max-width: 100%;
+  max-width: 80%;
 }
 
 .brand{
@@ -152,6 +152,7 @@ img{
 .image-manchet{    
   padding-left: 4%;
   padding-right: 4%;
+  max-height: 40px;
 }
 
 .footer{
@@ -191,6 +192,49 @@ img{
 
 .buy-ebook{
   font-size: 20px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.posts{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 5%;
+}
+
+.posts img{
+  width: 60%;
+  float: right;
+}
+
+.card-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+
+.card-group div{
+  max-width: 50%;
+}
+
+.card-image{
+  padding-right: 4%;
+}
+
+.card-content{
+  padding: 1% 15% 1% 0;
+}
+
+.card-content div{
+  display: flex;
+  font-size: 12px;
 }
 
 /* .footer div{
