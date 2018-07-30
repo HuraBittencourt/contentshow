@@ -3,11 +3,12 @@
 }
 
 body{
-  background:#92bde7;
+  background:white;
   color:#485e74;
   line-height:1.6;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding:1em;
+  /* padding:1em; */
+  margin: 0px;
 }
 
 .container{
@@ -22,13 +23,26 @@ ul{
   padding:0;
 }
 
+header{
+  background-image: linear-gradient( to right, #149BC8 50%, #745DBB ) !important;
+  width: 100%;
+  position: relative;
+}
+
+img{
+  max-width: 100%;
+}
+
 .brand{
   text-align: center;
-  color:#fff;
+  color:black;
+  font-weight: bold;
+  text-align: center !important;
 }
 
 .brand span{
-  color:#00a4c8;
+  color: linear-gradient( to right, #149BC8 50% , #745DBB ) !important;
+  font-weight: bold;
 }
 
 .wrapper{
@@ -114,3 +128,74 @@ ul{
     text-align: left;
   }
 }
+
+#header-div{
+  /* padding: 1% 0 1% 0; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-link{
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#left-menu{
+  margin-left: 8%;
+}
+
+#right-menu{
+  margin-right: 8%;
+}
+
+.image-manchet{    
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.footer{
+  background-color: #149BC8;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  /* vertical-align: middle; */
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+
+.footer input{
+  font-size: 12px;
+}
+
+.text-footer{
+  text-align: center;
+  width: 30%;
+}
+
+.form-footer{
+  text-align: -webkit-center;
+  width: 30%;
+}
+
+.form-footer div{
+  margin-top: 2%;
+}
+
+.form-footer button{
+  background-color: #745DBB;
+  width: 100%;
+}
+
+.buy-ebook{
+  font-size: 20px;
+}
+
+/* .footer div{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+} */
