@@ -29,8 +29,8 @@ header{
   position: relative;
 }
 
-img{
-  /* max-width: 80%; */
+h4{
+  color: black;
 }
 
 .brand{
@@ -156,7 +156,7 @@ img{
 
 .image-logo{
   width: 30%;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .image-manchete{    
@@ -210,6 +210,7 @@ img{
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 20px;
 }
 
 .posts{
@@ -248,9 +249,49 @@ img{
 .card-content div{
   display: flex;
   font-size: 12px;
+  font-style: italic;
 }
 
 .line-style{
   border: 0.5px solid #80808052;
   width: 71%;
 }
+
+.highlights-posts{
+  align-items: center;
+  display: flex;
+  border: 0.5px solid #80808052;
+  width: 48%;
+  flex-direction: column;
+  position: absolute;
+  top: 540px;
+  left: 26%;
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+  padding: 2% 5% 2% 5%;
+  text-align: center;
+}
+
+.highlights-posts p{
+  color: black;
+}
+
+.highlights-posts div{
+  display: flex;
+  font-size: 12px;
+  font-style: italic;
+}
+
+  /* align-items: center; */
+  /* float: left; */
+  /* display: flex;
+  border: 1px solid gray;
+  width: 30%;
+  flex-direction: column; */
+  /* left: 0px; */
+  /* right: 0px; */
+  /* margin: auto; */
+  /* position: absolute;
+  margin-top: -5%; */
+  /* margin-left: 35%; */
+  /* margin-right: 50%; */
