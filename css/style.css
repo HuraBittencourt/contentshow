@@ -30,7 +30,7 @@ header{
 }
 
 img{
-  max-width: 80%;
+  /* max-width: 80%; */
 }
 
 .brand{
@@ -38,6 +38,7 @@ img{
   color:black;
   font-weight: bold;
   text-align: center !important;
+  margin-bottom: 16px;
 }
 
 .brand span{
@@ -149,10 +150,21 @@ img{
   margin-right: 8%;
 }
 
-.image-manchet{    
+#right-menu img{
+  width: 24px;
+}
+
+.image-logo{
+  width: 30%;
+  margin-bottom: 16px;
+}
+
+.image-manchete{    
   padding-left: 4%;
   padding-right: 4%;
-  max-height: 40px;
+  /* max-height: 40px; */
+  width: 90%;
+  height: 470px;
 }
 
 .footer{
@@ -209,15 +221,16 @@ img{
 }
 
 .posts img{
-  width: 60%;
+  width: 68%;
   float: right;
+  height: 220px;
 }
 
 .card-group{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 1%;
+    margin: 1% 0 1% 0;
 }
 
 .card-group div{
@@ -225,7 +238,7 @@ img{
 }
 
 .card-image{
-  padding-right: 4%;
+  padding-right: 2%;
 }
 
 .card-content{
@@ -237,9 +250,7 @@ img{
   font-size: 12px;
 }
 
-/* .footer div{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-} */
+.line-style{
+  border: 0.5px solid #80808052;
+  width: 71%;
+}
