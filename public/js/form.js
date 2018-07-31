@@ -26,19 +26,18 @@ function submitForm(e) {
     var name = getInputVal('name');
     var email = getInputVal('email');
 
-    // Save message
-    saveMessage(name, email, data, getIp());
+    if (validateName(name)) {
 
-    // Show alert
-    // document.querySelector('.alert').style.display = 'block';
+        // Save message
+        saveMessage(name, email, data, getIp());
 
-    // Hide alert after 3 seconds
-    setTimeout(function () {
-        // document.querySelector('.alert').style.display = 'none';
-    }, 3000);
+        // Clear form
+        document.getElementById('contactForm').reset();
+    }else{
 
-    // Clear form
-    document.getElementById('contactForm').reset();
+        alert("Insira um nome e sobrenome!");
+    }
+
 }
 
 // Function to get get form values
@@ -72,4 +71,14 @@ function getIp() {
     return respostaJson.ip;
   }
   return 'ERRO: Ocorreu algum problema com nossa api';
+}
+
+//Check if both name and surname are wrote
+function validateName(nome) {
+    let validName = nome.trim().match(/^[a-zA-ZáÁéÉ][a-zA-ZáÁéÉ]+([ ][a-zA-ZáÁéÉ]+)*([ ][a-zA-ZáÁéÉ][a-zA-ZáÁéÉ]+)+([ ][a-zA-ZáÁéÉ]+)*$/);
+    if (validName) {
+        return true;
+    } else {
+        return false;
+    }
 }
