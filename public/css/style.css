@@ -276,6 +276,7 @@ h4{
   font-family: 'Open Sans', sans-serif;
   padding: 2% 5% 2% 5%;
   text-align: center;
+  opacity: 0.95;
 }
 
 .highlights-posts p{
@@ -299,6 +300,60 @@ h4{
   margin-top: 10px;
 }
 
+.modal.fade{
+  color: black;
+}
+
+.register-modal{
+  display: none;
+}
+
+#exampleModalCenter #contactForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#exampleModalCenter .modal-content{
+  font-family: 'Open Sans', sans-serif;
+}
+
+#exampleModalCenter .col-sm-10{
+  margin-top: 30px;
+}
+
+#exampleModalCenter .col-sm-10 input{
+  background-color: #d0d0d052;
+  border-radius: 12px;
+  height: 45px;
+}
+
+#exampleModalCenter .modal-header{
+  background-image: linear-gradient( to right, #149BC8 18%, #745DBB );
+  color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#exampleModalCenter .modal-content{
+  border-radius: 20px;
+}
+
+.button-modal-get-ebook{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+#exampleModalCenter button{
+  background-image: linear-gradient( to right, #149BC8 35%, #745DBB );
+  border-radius: 12px;
+
+}
 
 @media(max-width: 768px) {
     .nav{
