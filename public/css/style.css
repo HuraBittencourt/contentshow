@@ -152,6 +152,7 @@ h4{
 
 #right-menu img{
   width: 24px;
+  max-width: 100%;
 }
 
 .image-logo{
@@ -164,7 +165,9 @@ h4{
   padding-right: 4%;
   /* max-height: 40px; */
   width: 90%;
-  height: 470px;
+  max-width: 100%;
+  height: auto;
+  max-height: 470px;
 }
 
 .footer{
@@ -177,6 +180,7 @@ h4{
   justify-content: space-between;
   align-items: center;
   font-size: 15px;
+  padding-top: 10px;
 }
 
 .footer input{
@@ -222,6 +226,7 @@ h4{
 }
 
 .posts img{
+  max-width: 100%;
   width: 68%;
   float: right;
   height: 220px;
@@ -250,6 +255,7 @@ h4{
   display: flex;
   font-size: 12px;
   font-style: italic;
+  justify-content: space-between;
 }
 
 .line-style{
@@ -280,4 +286,47 @@ h4{
   display: flex;
   font-size: 12px;
   font-style: italic;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.contentshow-copyright{
+   width: 100%;
+  text-align: center;
+  background-color: white;
+  color: black;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+
+@media(max-width: 768px) {
+    .nav{
+    flex-direction: column;
+  }
+
+  .image-logo{
+    width: auto;
+  }
+
+  .highlights-posts{
+    position: unset;
+    width: auto;
+  }
+
+  .card-group div{
+    max-width: 100% !important;
+  }
+
+  .posts img{
+    width: auto;
+  }
+
+  .text-footer{
+    width: 100%;
+  }
+
+  .form-footer{
+    width: 100%;
+  }
 }

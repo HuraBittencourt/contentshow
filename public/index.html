@@ -12,6 +12,15 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/jquery.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123043572-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-123043572-1');
+  </script>
 </head>
 <body>
 
@@ -25,16 +34,18 @@
         </nav>
       </div>
       <div id="right-menu">
-        <img src="imagens/FacebookIcon.png" alt="">
-        <img src="imagens/LinkedinIcon.png" alt="">
+        <img src="imagens/facebook_online.png" class="img-fluid">
+        <a href="https://www.linkedin.com/company/contentshow/">
+          <img src="imagens/linkedin_online.png" class="img-fluid">
+        </a>
       </div>
     </div>
   </header>
 
   <div class="container content">
     <!-- <div w3-include-html="header.html"></div> -->
-    <img class="image-logo" src="imagens/LogoContentShow.png" alt="">
-    <img class="image-manchete" src="imagens/ipad-820272_1920.jpg" alt="">
+    <img class="image-logo img-fluid" src="imagens/LogoContentShow.png">
+    <img class="image-manchete img-fluid" src="imagens/ipad-820272_1920.jpg">
   </div>
 
   <div class="highlights-posts">
@@ -49,7 +60,7 @@
   <div class="container posts">
     <div class="card-group">
       <div class="card-image">
-        <img src="imagens/student-849825_1920.jpg" alt="">
+        <img src="imagens/student-849825_1920.jpg" class="img-fluid" >
       </div>
 
       <div class="card-content">
@@ -67,7 +78,7 @@
 
     <div class="card-group">
       <div class="card-image">
-        <img src="imagens/team-3373638_1920.jpg" alt="">
+        <img src="imagens/team-3373638_1920.jpg" class="img-fluid" alt="Responsive image">
       </div>
       
       <div class="card-content">
@@ -86,7 +97,7 @@
 
     <div class="card-group">
       <div class="card-image">
-        <img src="imagens/children-593313_1920.jpg" alt="">
+        <img src="imagens/children-593313_1920.jpg" class="img-fluid" alt="Responsive image">
       </div>
       
       <div class="card-content">
@@ -104,24 +115,26 @@
 
   <footer class="footer">
 
-    <div class="text-footer buy-ebook"><strong>[eBook] </br> Os 4 passos para ser um </br> Super Streaming</strong></div>
+    <div class="text-footer buy-ebook"><strong>[eBook] </br> Os 4 passos para ser um </br> Super Streamer</strong></div>
     <div class="text-footer">Descubra as melhores maneiras de realizar um Streaming impecável e conseguir mais seguidores</div>
     
     <div class="form-footer">
       <div class="col-sm-10">
-        <input type="password" class="form-control" id="inputPassword" placeholder="Coloque seu nome aqui">
+        <input type="text" class="form-control" id="inputPassword" placeholder="Coloque seu nome completo">
       </div>
       <div class="col-sm-10">
-        <input type="password" class="form-control" id="inputPassword" placeholder="Coloque seu email aqui">
+        <input type="email" class="form-control" id="inputPassword" placeholder="Coloque seu email">
       </div>
       <div class="col-sm-10">
         <button type="submit" class="btn btn-primary mb-2">Receber eBook</button>
       </div>
     </div>
-
+    <div class="contentshow-copyright">
+      <span>Copyright Contentshow, 2018</span>
+    </div>
   </footer>
   <script src="js/includes.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
-  <script src="js/main.js"></script>S
+  <script src="js/main.js"></script>
 </body>
 </html>
