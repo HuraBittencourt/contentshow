@@ -276,6 +276,7 @@ h4{
   font-family: 'Open Sans', sans-serif;
   padding: 2% 5% 2% 5%;
   text-align: center;
+  opacity: 0.95;
 }
 
 .highlights-posts p{

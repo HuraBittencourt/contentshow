@@ -6,6 +6,9 @@ function clickOnButton() {
     $("#button-submit").click(function () {
         $("#open-modal").click();
     });
+    $("#button-submit-get-ebook").click(function () {
+        $("#get-ebook").click();
+    });
 }
 
 function checkLocalStorage() {
