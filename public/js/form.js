@@ -4,13 +4,6 @@ document.getElementById('contactForm').addEventListener('submit', submitForm);
 //Get date
 var data = (moment().format('YYYY-MM-DD HH:mm:ss'));
 
-// Capture IP Address
-var ipAddress;
-var getIpAddress = $.getJSON('http://gd.geobytes.com/GetCityDetails?callback=?', function (data) {
-    ipAddress = [];
-    ipAddress.push(data.geobytesipaddress)
-});
-
 // Initialize Firebase
 var config = {
     apiKey: "AIzaSyBab0SUTQMOWLah0cMMOHobAe6id_mrp5Y",
@@ -34,7 +27,7 @@ function submitForm(e) {
     var email = getInputVal('email');
 
     // Save message
-    saveMessage(name, email, data);
+    saveMessage(name, email, data, getIp());
 
     // Show alert
     // document.querySelector('.alert').style.display = 'block';
@@ -54,13 +47,29 @@ function getInputVal(id) {
 }
 
 // Save message to firebase
-function saveMessage(name, email, data) {
+function saveMessage(name, email, data, ip) {
     var newMessageRef = messagesRef.push();
-    getIpAddress;
+    //getIpAddress;
     newMessageRef.set({
         name: name,
         email: email,
         data: data,
-        ip: ipAddress[0]
+        ip: ip
     });
+}
+
+//Capture IP Address
+function getIp() {
+  const xhr = new XMLHttpRequest();
+  const method = 'GET';
+  const url = 'https://ipapi.co/json/';
+  
+  xhr.open(method, url, false)
+  xhr.send();
+
+  if(xhr.status == 200) {
+    const respostaJson = JSON.parse(xhr.response);
+    return respostaJson.ip;
+  }
+  return 'ERRO: Ocorreu algum problema com nossa api';
 }
