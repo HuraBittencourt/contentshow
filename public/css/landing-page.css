@@ -21,28 +21,34 @@ body {
 }
 
 .container {
-	margin-left: auto;
-	margin-right: auto;
+	display: flex;
 	padding: 1em;
+	text-align: center
 }
 
 .content-left {
-	float: left;
-	width: 50%;
-	display: flex;
-	flex-direction: column;
+	flex: 50%;
 	align-items: center;
-	padding-top: 20px;
+	padding: 20px;
+	border: #495057 solid 1px;
 }
 
 .content-right {
-	flex-direction: column;
+	flex: 50%;
 	align-items: center;
-	padding-top: 20px;
+	padding: 20px;
+	border: #79c879 solid 1px;
+}
+
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .form-field{
 	padding: .375rem .75rem;
+	margin: 1em;
     font-size: 1rem;
     line-height: 1.5;
     color: #495057;
