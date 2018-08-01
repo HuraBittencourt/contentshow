@@ -20,6 +20,12 @@ body {
 
 .btn{
 	width: 100%;
+	white-space: normal;
+}
+
+.btn-primary{
+	margin-top: 3em;
+	width: 75%;
 }
 
 .banner {
