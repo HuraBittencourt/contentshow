@@ -23,8 +23,20 @@ function submitForm(e) {
     e.preventDefault();
 
     // Get values
-    var name = getInputVal('name');
-    var email = getInputVal('email');
+    var name = $('#name').val();
+    var email = $('#email').val();
+    
+    if (!validarNome(name)) {
+        showAlertValidation($("#invalid-name"), $("#name"));
+        return;
+    }
+    hideAlertValidation($("#invalid-name"), $("#name"));
+
+    if (!validarEmail(email)) {
+        showAlertValidation($("#invalid-email"), $("#email"));
+        return;
+    }
+    hideAlertValidation($("#invalid-email"), $("#email"));
 
     // Save message
     saveMessage(name, email, data, getIp());
@@ -37,6 +49,7 @@ function submitForm(e) {
         // document.querySelector('.alert').style.display = 'none';
     }, 3000);
 
+    $("#open-modal").click();
     // Clear form
     document.getElementById('contactForm').reset();
 }
@@ -72,4 +85,32 @@ function getIp() {
     return respostaJson.ip;
   }
   return 'ERRO: Ocorreu algum problema com nossa api';
+}
+
+function validarNome(nome) {
+    let nomeValido = nome.trim().match(/^[a-zA-Za-zA-ZáÁãÃéÉêÊíÍõÕôÔúÚçÇ][a-zA-ZáÁãÃéÉêÊíÍõÕôÔúÚçÇ]+([ ][a-zA-ZáÁãÃéÉêÊíÍõÕôÔúÚçÇ]+)*([ ][a-zA-ZáÁãÃéÉêÊíÍõÕôÔúÚçÇ][a-zA-ZáÁãÃéÉêÊíÍõÕôÔúÚçÇ]+)+([ ][a-zA-ZáÁãÃéÉêÊíÍõÕôÔúÚçÇ]+)*$/);
+    if (nomeValido) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function validarEmail(email) {
+    let nomeValido = email.trim().match(/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i);
+    if (nomeValido) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function showAlertValidation(element, labelElement) {
+    element.show();
+    labelElement.addClass('invalid-field');
+}
+
+function hideAlertValidation(element, labelElement) {
+    element.hide();
+    labelElement.removeClass('invalid-field');
 }

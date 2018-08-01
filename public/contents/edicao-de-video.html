@@ -159,9 +159,15 @@
             <form id="contactForm">
                 <div class="col-sm-10">
                     <input type="text" class="form-control" id="name" placeholder="Coloque seu nome completo" required>
+                    <div id="invalid-name" class="invalid-feedback">
+						Insira nome e sobrenome
+					</div>
                 </div>
                 <div class="col-sm-10">
                     <input type="email" class="form-control" id="email" placeholder="Coloque seu email" required>
+                    <div id="invalid-email" class="invalid-feedback">
+						Insira o e-mail
+					</div>
                 </div>
                 <div class="col-sm-10">
                     <button type="submit" id="button-submit" class="btn btn-primary mb-2">Receber eBook</button>

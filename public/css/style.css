@@ -384,6 +384,17 @@ a {
   border-radius: 12px;
 }
 
+.invalid-feedback{
+  background-color: #ad2222;
+  border-radius: 4px;
+  opacity: 0.9;
+  color: white;
+}
+
+.invalid-field{
+  border-color: #ad2222;
+}
+
 @media(max-width: 768px) {
   .nav {
     flex-direction: column;
