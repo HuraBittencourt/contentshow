@@ -1,0 +1,66 @@
+/* .image-manchete{
+    max-height: 190px;
+} */
+
+.reference-ebook{
+  font-style: italic;
+  max-width: 40%;
+}
+
+.post-content{
+  display: flex;
+  flex-direction: column;
+  padding: 0px 16% 0 16%;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 70px;
+}
+
+.post-content h4{
+  font-weight: bold;
+}
+
+.description-post{
+  text-align: justify;
+}
+
+.highlights-posts{
+  position: unset;
+  text-align: initial;
+  align-items: normal;
+  padding: 1% 5% 1% 5%;
+  padding-right: 180px;
+  padding-left: 82px;
+}
+
+.name-editor{
+  width: auto !important;
+}
+
+.post-editor{
+  align-items: normal;
+  padding-top: 0px;
+  margin-top: -90px;
+  margin-left: 157px;
+}
+
+.post-content div{
+  margin-top: 3%;
+}
+
+/* MOBILE VERSION */
+@media(max-width: 768px){
+  .post-editor{
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: auto;
+  }
+  
+  .highlights-posts{
+    padding-right: inherit;
+    padding-left: inherit;
+  }
+  
+  .reference-ebook{
+    max-width: none;
+  }
+}
