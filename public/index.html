@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="imagens/favicon.jpeg">
+    <link rel="shortcut icon" href="imagens/favicon.png">
     <title>contentshow</title>
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
@@ -15,6 +15,9 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/landing-page.css">
     <script src="js/jquery.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -50,15 +53,17 @@
                 planeta e dos nossos países. O desemprego beira 20%, ou seja, 1 em cada 4 portugueses.</p>
 
             <div class="form-group">
-                <div class="">
-                    <input type="text" class="form-field" id="name" placeholder="Coloque seu nome completo">
-                </div>
-                <div class="">
-                    <input type="email" class="form-field" id="email" placeholder="Coloque seu email">
-                </div>
-                <div class="">
-                    <button type="submit" id="button-submit" class="btn btn-primary mb-2">Receber eBook</button>
-                </div>
+                <form id="contactForm" action="home.html">
+                    <div class="">
+                        <input type="text" class="form-field" id="name" placeholder="Coloque seu nome completo">
+                    </div>
+                    <div class="">
+                        <input type="email" class="form-field" id="email" placeholder="Coloque seu email">
+                    </div>
+                    <div class="">
+                        <button type="submit" id="button-submit" class="btn btn-primary mb-2">Receber eBook e acessar o site</button>
+                    </div>
+                </form>
             </div>
             <form method="GET" action="home.html">
                 <button type="submit" class="btn btn-secondary mb-2">Ir para o site e não receber o nosso íncrivel e-book</button>
@@ -68,9 +73,8 @@
 
     <script src="js/includes.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
-    <script src="js/main.js"></script>
     <script src="js/all.js"></script>
-	<script src="js/form.js"></script>
+    <script src="js/form-landingpage.js"></script>
 </body>
 
 </html>
