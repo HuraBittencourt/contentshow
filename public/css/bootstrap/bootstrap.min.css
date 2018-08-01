@@ -156,11 +156,10 @@ a {
     text-decoration: none;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
-    font-size: .8em;
 }
 
 a:hover {
-    color: white;
+    color: #007bff;
     text-decoration: underline
 }
 
