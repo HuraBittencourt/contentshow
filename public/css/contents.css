@@ -50,14 +50,15 @@
 h5{
   font-size: 1.1em;
   padding-left: 1em;
+  font-weight: bold;
 }
 
 .referencias{
-  font-size: .85em;
+  font-size: .80em;
 }
 
 li{
-  font-size: .85em;
+  font-size: .80em;
 }
 /* MOBILE VERSION */
 
