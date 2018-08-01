@@ -53,7 +53,7 @@ function submitForm(e) {
     // Clear form
     document.getElementById('contactForm').reset();
 
-    showFile();
+    downloadPDF();
 }
 
 // Function to get get form values
@@ -117,7 +117,7 @@ function hideAlertValidation(element, labelElement) {
     labelElement.removeClass('invalid-field');
 }
 
-function showFile(){
+function downloadPDF(){
     var link = document.createElement('a');
     link.href = "arquivos/Super Streamer.pdf";
     link.download = "Super Streamer.pdf";
