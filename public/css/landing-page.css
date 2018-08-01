@@ -38,7 +38,7 @@ body {
 .content-left {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: left;
 	text-align: left;
 	padding: 60px;
 }
