@@ -47,18 +47,24 @@
   margin-top: 3%;
 }
 
-h5{
+h5 {
   font-size: 1.1em;
   padding-left: 1em;
+  font-weight: bold;
 }
 
-.referencias{
-  font-size: .85em;
+.referencias {
+  font-size: .80em;
 }
 
-li{
-  font-size: .85em;
+li {
+  font-size: .80em;
 }
+
+a {
+  color: lightgray;
+}
+
 /* MOBILE VERSION */
 
 @media(max-width: 768px) {
