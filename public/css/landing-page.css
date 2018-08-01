@@ -311,6 +311,18 @@ h4 {
 	font-style: italic;
 }
 
+.invalid-feedback{
+  background-color: #ad2222;
+  border-radius: 4px;
+  opacity: 0.9;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.invalid-field{
+  border-color: #ad2222;
+}
+
 @media(min-width:700px) {
 	.wrapper {
 		display: grid;

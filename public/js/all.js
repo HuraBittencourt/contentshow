@@ -3,12 +3,12 @@ clickOnButton();
 $(document).ready(function(){checkLocalStorage()});
 
 function clickOnButton() {
-    $("#button-submit").click(function () {
-        $("#open-modal").click();
-    });
-    $("#button-submit-get-ebook").click(function () {
-        $("#get-ebook").click();
-    });
+    // $("#button-submit").click(function () {
+    //     $("#open-modal").click();
+    // });
+    // $("#button-submit-get-ebook").click(function () {
+    //     $("#get-ebook").click();
+    // });
 }
 
 function checkLocalStorage() {

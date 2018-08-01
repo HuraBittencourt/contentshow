@@ -142,12 +142,18 @@
 		<div class="text-footer">Descubra as melhores maneiras de realizar um Streaming impecável e conseguir mais seguidores</div>
 
 		<div class="form-footer">
-			<form id="contactForm">
+			<form id="contactForm" class="needs-validation" novalidate>
 				<div class="col-sm-10">
-					<input type="text" class="form-control" id="name" placeholder="Coloque seu nome completo">
+					<input type="text" class="form-control" id="name" placeholder="Coloque seu nome completo" aria-describedby="inputGroupPrepend" required>
+					<div id="invalid-name" class="invalid-feedback">
+						Insira nome e sobrenome
+					</div>
 				</div>
 				<div class="col-sm-10">
-					<input type="email" class="form-control" id="email" placeholder="Coloque seu email">
+					<input type="email" class="form-control" id="email" placeholder="Coloque seu email" aria-describedby="inputGroupPrepend" required>
+					<div id="invalid-email" class="invalid-feedback">
+						Insira o e-mail
+					</div>
 				</div>
 				<div class="col-sm-10">
 					<button type="submit" id="button-submit" class="btn btn-primary mb-2">Receber eBook</button>
