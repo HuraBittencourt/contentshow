@@ -36,7 +36,7 @@ $ git commit -m "descrição do que foi feito"
 1 - $ git pull (Na Master. Para pegar a master fresquinha, com todos os arquivos atualizados)
 2 - $ git checkout -b nome-da-nova-feature (a partir da branch Master)
 3 - Desenvolva tudo
-4 - $git status (para verificar todos os arquivos que foram alterados)
+4 - $ git status (para verificar todos os arquivos que foram alterados)
 5 - $ git add nome_do_arquivo (para todos os arquivos alterados)
 6 - $ git commit -m "Foi desenvolvido isso e isso"
 7 - $ git push (para enviar para o repositorio remoto)
