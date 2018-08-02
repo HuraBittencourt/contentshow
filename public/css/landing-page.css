@@ -345,19 +345,6 @@ h4 {
 	width: 100%;
 }
 
-@media(min-width: 700px) {
-	.wrapper {
-		display: grid;
-		grid-template-columns: 1fr 2fr;
-	}
-	.wrapper>* {
-		padding: 2em;
-	}
-	.company-info h3, .company-info ul, .brand {
-		text-align: left;
-	}
-}
-
 @media(max-width: 768px) {
 	.content-left {
 		width: 100%;
