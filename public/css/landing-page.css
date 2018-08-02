@@ -40,6 +40,7 @@ body {
 	text-align: center;
 	align-content: center;
 	align-items: center;
+	display: flex;
 }
 
 .content-left {
@@ -344,7 +345,7 @@ h4 {
 	width: 100%;
 }
 
-@media(min-width: 768px) {
+@media(min-width: 700px) {
 	.wrapper {
 		display: grid;
 		grid-template-columns: 1fr 2fr;
@@ -355,12 +356,9 @@ h4 {
 	.company-info h3, .company-info ul, .brand {
 		text-align: left;
 	}
+}
 
-	.container {
-		display: flex;
-		flex-direction: column;
-	}
-	
+@media(max-width: 768px) {
 	.content-left {
 		width: 100%;
 	}
@@ -369,4 +367,8 @@ h4 {
 		width: 100%;
 	}
 
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
 }
