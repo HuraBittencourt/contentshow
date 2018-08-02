@@ -361,14 +361,25 @@ h4 {
 @media(max-width: 768px) {
 	.content-left {
 		width: 100%;
+		padding: 0% 3% 0% 3%;
 	}
 	
 	.content-right {
 		width: 100%;
+		padding: 2% 0% 2% 0%;
+	}
+
+	.content-right p{
+		padding: 0% 4% 0% 4%;
 	}
 
 	.container {
 		display: flex;
 		flex-direction: column;
+		padding: 4% 0% 0% 0%;
+	}
+
+	.content-video iframe{
+		height: auto;
 	}
 }
