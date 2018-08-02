@@ -52,7 +52,11 @@ function submitForm(e) {
     $("#open-modal").click();
     // Clear form
     document.getElementById('contactForm').reset();
+
+    showFile();
+
     window.open("home.html","_self")
+
 }
 
 // Function to get get form values
@@ -114,4 +118,11 @@ function showAlertValidation(element, labelElement) {
 function hideAlertValidation(element, labelElement) {
     element.hide();
     labelElement.removeClass('invalid-field');
+}
+
+function showFile(){
+    var link = document.createElement('a');
+    link.href = "arquivos/Super Streamer.pdf";
+    link.download = "Super Streamer.pdf";
+    link.click();
 }
