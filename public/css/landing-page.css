@@ -333,6 +333,14 @@ h4 {
 	color: inherit;
 }
 
+.content-video{
+	width: 100%;
+}
+
+.content-video iframe{
+	width: 100%;
+}
+
 @media(min-width:700px) {
 	.wrapper {
 		display: grid;
