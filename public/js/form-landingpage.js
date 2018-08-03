@@ -122,7 +122,7 @@ function hideAlertValidation(element, labelElement) {
 
 function showFile(){
     var link = document.createElement('a');
-    link.href = "arquivos/Super Streamer.pdf";
-    link.download = "Super Streamer.pdf";
+    link.href = "arquivos/ContentShow - O guia para comecar a produzir videos.pdf";
+    link.download = "ContentShow - O guia para comecar a produzir videos.pdf";
     link.click();
 }
